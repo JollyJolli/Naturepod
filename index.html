@@ -67,30 +67,11 @@
             <h5 class="card-title">Maceta</h5>
             <p class="card-text">Maceta básica para plantas.</p>
             <p class="card-text original-price" style="color: red; text-decoration: line-through;">$99.99</p>
-            <p class="card-text discount-price">$49.99</p>
+            <p class="card-text discount-price">$99.99</p>
             <a href="#" class="btn btn-primary">Agregar al carrito</a>
         </div>
     </div>
 </div>
-
-<script>
-    // JavaScript para cambiar dinámicamente el precio
-    document.addEventListener("DOMContentLoaded", function () {
-        var originalPrice = document.querySelector(".original-price");
-        var discountPrice = document.querySelector(".discount-price");
-
-        // Puedes ajustar el porcentaje de descuento según tus necesidades
-        var discountPercentage = 50; // 50% de descuento
-
-        // Calcular el precio con descuento
-        var originalPriceValue = parseFloat(originalPrice.innerText.replace("$", ""));
-        var discountedPriceValue = originalPriceValue * (1 - discountPercentage / 100);
-
-        // Mostrar el precio con descuento y ocultar el precio original
-        originalPrice.style.display = "none";
-        discountPrice.innerText = "$" + discountedPriceValue.toFixed(2);
-    });
-</script>
 
 
         <!-- Tarjeta para la venta de spray -->
